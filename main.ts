@@ -32,6 +32,10 @@ let modelo: string = "Tacoma";
 //uso del caracter backtick
 let nombre: string = "Raul";
 let apellido: string = "Jimenez";
+let impresion: string = `
+Nombre: ${nombre}
+Apellido: ${apellido}
+`;
 
 enum MarcasDeAutos {
     Toyota = 100,
