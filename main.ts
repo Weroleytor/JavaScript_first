@@ -1,17 +1,37 @@
-function saludar2(nombre){
+//1.- Saludar
+function saludar(nombre){
     return "hola, " + nombre;
 }
 
-console.log(saludar("Geovany"));
+console.log(saludar("Ulises Heraldez"));
 
-let esVerdadero2 = true;
+
+//2.- Tipos, Boolean
+let esVerdadero = true;
 console.log(esVerdadero);
 
-let futbolista3: [string, string];
+let futbolista: [string, string];
 futbolista = ['Messi', '34'];
 
 console.log(`El nombre es ${futbolista[0]}`);
 console.log(`La edad es ${futbolista[1]}`);
+
+
+//3.- Tipos, Number
+let entero: number = 6;
+let hexadecimal: number = 0xf00d;
+let binario: number = 0b1010;
+let octal: number = 0o744;
+
+
+//4.- Tipos, String
+let marca: string = 'Toyota';
+let modelo: string = "Tacoma";
+
+
+//uso del caracter backtick
+let nombre: string = "Raul";
+let apellido: string = "Jimenez";
 
 enum MarcasDeAutos {
     Toyota = 100,
