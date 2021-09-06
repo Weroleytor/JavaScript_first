@@ -1,6 +1,6 @@
 //1.- Saludar
 function saludar(nombre){
-    return "hola, " + nombre;
+    return "shola, " + nombre;
 }
 
 console.log(saludar("Ulises Heraldez"));
