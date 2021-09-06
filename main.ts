@@ -134,7 +134,7 @@ imprimirId('abc');
 
 
 //15.- Uniones
-function imprimirId(id: number | string) {
+function imprimirId2(id: number | string) {
     if (typeof id === "string") {
         console.log(`El id es ${(id as string).toUpperCase()}`)
     } else{
@@ -142,8 +142,8 @@ function imprimirId(id: number | string) {
     }
 }
 
-imprimirId('este_es_mi_id');
-imprimirId(100.234234123);
+imprimirId2('este_es_mi_id');
+imprimirId2(100.234234123);
 
 
 //16.- Tipos, Type Assertion
