@@ -51,3 +51,33 @@ var Derivada = /** @class */ (function (_super) {
 }(Base));
 var d = new Derivada();
 console.log(d.m);
+var Caja = /** @class */ (function () {
+    function Caja(value) {
+        this.contenido = value;
+        console.log(this.contenido);
+    }
+    return Caja;
+}());
+var misJuguetes = [];
+misJuguetes.push({ nombre: "Pelota" });
+misJuguetes.push({ nombre: "Consola" });
+var miCajaDeJuguetes = new Caja(misJuguetes);
+var miMaquillaje = [];
+miMaquillaje.push({ nombre: "Sombras" });
+miMaquillaje.push({ nombre: "Labial" });
+var MiCajaDeMaquillaje = new Caja(miMaquillaje);
+var Caja2 = /** @class */ (function () {
+    function Caja2() {
+        this.contenido = "";
+        this.contenido2 = "Test";
+    }
+    Caja2.prototype.set = function (valor) {
+        this.contenido = valor;
+        return this;
+    };
+    return Caja2;
+}());
+var miCaja2 = new Caja2();
+var valorRetornado = miCaja2.set("Joyas");
+console.log(miCaja2);
+console.log(valorRetornado);
